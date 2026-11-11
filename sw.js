@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'ed-minha-escala-';
-const CACHE = `${CACHE_PREFIX}v0-71`;
+const CACHE = `${CACHE_PREFIX}v0-72`;
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './favicon-32.png', './logo-enfermeiro-direto.svg', './logo-ed-wilson-borges.jpg', './logo-ed-wilson-borges.svg', './logo-ed-wilson-borges-dark.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
